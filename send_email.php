@@ -2,6 +2,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+//сменить директорию на директорию проекта (работает только в повер шел под админом) D: cd SoureCode\landing-postman 
+//стартонуть локальный сервер на пыхе php -S localhost:8000
+
+
 require 'vendor/autoload.php'; // Подключаем PHPMailer
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -18,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // SMTP сервер (можно заменить на SMTP другого сервиса)
         $mail->SMTPAuth = true;
-        $mail->Username = 'zloygolub@gmail.com'; // Замени на свой email
+        $mail->Username = 'zloygolub@gmail.com'; // Эмеил отправки"
         $mail->Password = 'zzqm kahf fcya yngw'; // Пароль от email (лучше использовать App Password)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
@@ -26,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // От кого письмо
         $mail->setFrom($email, "$firstName $lastName");
         // Кому отправляем
-        $mail->addAddress("kolosova.vell@gmail.com"); // Замени на свою почту
+        $mail->addAddress("kolosova.vell@gmail.com"); // Кому отправить
 
         // Тема письма
         $mail->Subject = "New Book Request from $firstName $lastName";
@@ -49,3 +53,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 ?>
+
+
