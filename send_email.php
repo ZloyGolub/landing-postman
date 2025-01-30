@@ -2,6 +2,18 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// Разрешаем CORS, чтобы GitHub Pages мог отправлять запросы
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Если это проверочный OPTIONS-запрос, просто отвечаем 200 OK
+if ($_SERVER["REQUEST_METHOD"] == "OPTIONS") {
+    http_response_code(200);
+    exit();
+}
+
+
 //сменить директорию на директорию проекта (работает только в повер шел под админом) D: cd SoureCode\landing-postman 
 //стартонуть локальный сервер на пыхе php -S localhost:8000
 //ТАСКА НА ЩАВТИРА ЗАХОСТИТЬ ЭТО НА heroku
