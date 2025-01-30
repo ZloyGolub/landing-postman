@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Discover how a former mailman became a millionaire in just 3 months.">
+    <meta name="keywords" content="success, finance, entrepreneur, wealth, motivation">
+    <meta name="author" content="Mailman to Millionaire">
+    <title>From Mailman to Millionaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+        }
+
+        .image-cover {
+            object-fit: cover;
+            width: 100%;
+            height: 350px;
+        }
+
+        .postal-girl {
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+        }
+
+        /* Затемнение фона */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* Полупрозрачный черный фон */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            display: none;
+            /* Скрываем по умолчанию */
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mailman to Millionaire</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#secrets">Secrets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="text-center py-5 bg-white">
+        <div class="container">
+            <h2 class="display-4 fw-bold">From Postal Worker to Millionaire in 3 Months</h2>
+            <p class="lead text-muted">What if you could change your life in just 90 days? One man did exactly that.
+            </p>
+            <p class="text-muted">With dedication, the right mindset, and smart financial moves, she went from
+                delivering mail to financial freedom. Now, you can learn how to follow in her footsteps.</p>
+            <a href="#story" class="btn btn-success btn-lg">Read the Story</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="img/postal-girl.jpg" class="img-fluid mb-4 postal-girl" alt="Placeholder Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="py-5">
+        <div class="container text-center">
+            <h3 class="fw-bold">His Journey</h3>
+            <p class="text-muted">After 20 years of hard work delivering mail, Emili decided to take a leap of faith and
+                pursue her true passion. Within just three months, she transformed her life and reached financial
+                success. He leveraged her deep knowledge of logistics and discipline to identify a business opportunity
+                in e-commerce, rapidly scaling her venture to success.</p>
+            <p class="text-muted fw-bold">And now, you can learn her exact steps!</p>
+        </div>
+    </section>
+
+    <section id="free-book" class="py-5 bg-light">
+        <div class="container text-center">
+            <h3 class="fw-bold">Get the Book - <span style="color: green; text-transform: uppercase;">"From Mail to
+                    Millions: Emili’s Path to Wealth" - Absolutely Free!</span></h3>
+            <p class="text-muted">Want to know exactly how Emili made her millions? Get your copy of <span
+                    style="color: green; font-weight: bold;">"From Mail to Millions: Emili’s Path to Wealth"</span> for
+                <span style="color: green; font-weight: bold; font-size: 1.2em; text-transform: uppercase;">FREE</span>
+                – all you need to do is provide your postal address. – all you need to do is provide your postal
+                address. – all you need to do is provide your postal address.
+            </p>
+            <a href="#contact" class="btn btn-success btn-lg">📘 Get Your Free Book Now! 📘</a>
+        </div>
+    </section>
+
+    <section id="story" class="py-5">
+        <div class="container text-center">
+            <h3 class="fw-bold">His Journey</h3>
+            <p class="text-muted">After 20 years of hard work delivering mail, Emili decided to take a leap of faith and
+                pursue her true passion. Within just three months, she transformed her life and reached financial
+                success. He leveraged her deep knowledge of logistics and discipline to identify a business opportunity
+                in e-commerce, rapidly scaling her venture to success.</p>
+        </div>
+    </section>
+
+    <section id="secrets" class="py-5 bg-white">
+        <div class="container text-center">
+            <h3 class="fw-bold">Secrets to Success</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded bg-light hover-effect">
+                        <img src="img/mindset-shift.jpg" class="img-fluid mb-3 image-cover" alt="Mindset Shift">
+                        <h4>Mindset Shift</h4>
+                        <p>Believing in yourself and taking calculated risks is key.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded bg-light hover-effect">
+                        <img src="img/smart-investments.jpg" class="img-fluid mb-3 image-cover" alt="Smart Investments">
+                        <h4>Smart Investments</h4>
+                        <p>Finding the right opportunities and acting on them fast.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded bg-light hover-effect">
+                        <img src="img/networking.jpg" class="img-fluid mb-3 image-cover" alt="Networking">
+                        <h4>Networking</h4>
+                        <p>Connecting with the right people to accelerate growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="in-book" class="py-5">
+        <div class="container text-center">
+            <h3 class="fw-bold">Plan to success</h3>
+            <p class="text-muted">Discover the exact strategies, challenges, and turning points that led Emili from
+                being a postal worker to a self-made millionaire. In this exclusive book, personally written by Emili,
+                she shares her insights, mistakes, and key decisions that transformed her life in just three months.
+                This is not just another success story—it is a practical guide filled with actionable steps you can take
+                to create financial freedom for yourself. And the best part? You can receive this book absolutely <span
+                    style="color: green; font-weight: bold;">FREE</span>—just provide your postal address.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h3 class="fw-bold">Get a book</h3>
+            <p class="text-muted">Want to buy something and read the sea about her success? Order the book right now.
+            </p>
+            <form class="row g-3 justify-content-start" method="POST" action="your-backend-endpoint">
+                <div class="col-md-6">
+                    <label for="firstname" class="visually-hidden">First Name</label>
+                    <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname" class="visually-hidden">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last Name"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="visually-hidden">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="address" class="visually-hidden">Postal Address</label>
+                    <input type="text" id="address" name="address" class="form-control"
+                        placeholder="Your Postal Address" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="postcode" class="visually-hidden">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" class="form-control" placeholder="Your Postcode"
+                        required>
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="visually-hidden">Your Message</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-success btn-lg" aria-label="Send your message">Apply</button>
+                </div>
+            </form>
+            <p class="text-danger fw-bold mt-3">⚠️ Limited Time Offer! Claim your free book before the timer runs out.
+            </p>
+            <p id="timer" class="text-success fs-4 fw-bold"></p>
+
+            <div id="loading-overlay">
+                <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <script>
+                function startTimer(durationInHours) {
+                    const now = new Date().getTime();
+                    const storedTime = localStorage.getItem("offerTimer");
+                    let deadline = storedTime ? parseInt(storedTime) : now + durationInHours * 60 * 60 * 1000;
+                    localStorage.setItem("offerTimer", deadline);
+
+                    function updateTimer() {
+                        const currentTime = new Date().getTime();
+                        const remainingTime = deadline - currentTime;
+                        if (remainingTime <= 0) {
+                            document.getElementById("timer").innerHTML = "⏳ Offer expired!";
+                            localStorage.removeItem("offerTimer");
+                        } else {
+                            const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+                            document.getElementById("timer").innerHTML = `⏳ Offer ends in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+                        }
+                    }
+                    setInterval(updateTimer, 1000);
+                    updateTimer();
+                }
+                function getRandomDuration() {
+                    return Math.floor(Math.random() * 2) + 2; // Generates a random number between 2 and 4
+                }
+                startTimer(getRandomDuration() * 60);
+                //хрень для необновления страницы и лоадинга
+                document.querySelector("form").addEventListener("submit", function (e) {
+                    e.preventDefault();
+
+                    const form = this;
+                    const formData = new FormData(form);
+                    const loadingOverlay = document.getElementById("loading-overlay");
+
+                    // Показываем загрузку
+                    loadingOverlay.style.display = "flex";
+
+                    fetch("send_email.php", {
+                        method: "POST",
+                        body: formData,
+                    })
+                        .then(response => response.text())
+                        .then(data => {
+                            // Скрываем загрузку
+                            loadingOverlay.style.display = "none";
+
+                            if (data.trim() === "success") {
+                                alert("✅ Your request has been sent successfully!");
+                                form.reset();
+                            } else {
+                                alert("❌ Something went wrong. Please try again.");
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                            loadingOverlay.style.display = "none";
+                            alert("❌ Network error. Please try again later.");
+                        });
+                });
+            </script>
+        </div>
+    </section>
+
+    <footer class="bg-success text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Mailman to Millionaire. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
