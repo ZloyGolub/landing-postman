@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\Exception;
 
 //сменить директорию на директорию проекта (работает только в повер шел под админом) D: cd SoureCode\landing-postman 
 //стартонуть локальный сервер на пыхе php -S localhost:8000
-
+//ТАСКА НА ЩАВТИРА ЗАХОСТИТЬ ЭТО НА heroku
 
 require 'vendor/autoload.php'; // Подключаем PHPMailer
 
