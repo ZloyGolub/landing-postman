@@ -61,9 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Mailer Error: " . $mail->ErrorInfo;
     }
 } else {
-    header("Location: index.html");
+    echo "Form received!";
     exit();
 }
+// } else {
+//     header("Location: index.html");
+//     exit();
+// }
 ?>
 
 

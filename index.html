@@ -255,7 +255,8 @@
                     // Показываем загрузку
                     loadingOverlay.style.display = "flex";
 
-                    fetch("send_email.php", {
+                    //fetch("send_email.php",
+                    fetch("https://landing-postman.onrender.com/send_email.php", {
                         method: "POST",
                         body: formData,
                     })
