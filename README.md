@@ -1,5 +1,4 @@
 # 📬 From Mailman to Millionaire 🚀
-# 📬 From Mailman to Millionaire 🚀
 
 ![Preview](preview.png)
 
